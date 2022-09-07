@@ -1,0 +1,16 @@
+# 配置RabbitMQ的基本信息  ip 端口 username  password..
+server:
+  port: 9008
+spring:
+  rabbitmq:
+    host: 192.168.3.74 # ip
+    port: 5672
+    username: diaoqiang
+    password: 123456
+    virtual-host: /dq
+rabbit:
+  queues:
+    # 直连队列
+    - name: queue.direct.1
+      exchange-name: fanout.mode
+#spring.rabbitmq.addresses=172.16.48.10:5672,172.16.48.11:5672,172.16.48.12:5672
