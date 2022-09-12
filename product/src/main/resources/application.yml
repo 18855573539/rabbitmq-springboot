@@ -12,5 +12,7 @@ spring:
     username: diaoqiang
     password: 123456
     virtual-host: /dq
+    publisher-confirm-type: correlated   #设置confirms type 确认模式 只有确认模式开启才配置
+    publisher-returns: true   #开启return确认模式 退回模式才配置
 #spring.rabbitmq.addresses=172.16.48.10:5672,172.16.48.11:5672,172.16.48.12:5672
 
